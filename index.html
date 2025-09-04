@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1: Introducción al elemento DIV</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Módulo 1: Introducción al elemento DIV</h1>
+            <p>Fundamentos del elemento más versátil de HTML</p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 ¿Qué es el elemento &lt;div&gt;?</h2>
+            <p>El elemento <strong>&lt;div&gt;</strong> (división) es un contenedor genérico de HTML que se utiliza para agrupar otros elementos y aplicar estilos o comportamientos específicos. Es como una "caja" invisible que puede contener cualquier tipo de contenido.</p>
+            
+            <h3>Características principales:</h3>
+            <ul>
+                <li>Es un <strong>elemento de bloque</strong> (ocupa toda la anchura disponible)</li>
+                <li>No tiene significado semántico por sí mismo</li>
+                <li>Es completamente personalizable con CSS</li>
+                <li>Puede contener cualquier otro elemento HTML</li>
+            </ul>
+            
+            <div class="demo">
+                <h4>Ejemplo visual:</h4>
+                <div class="div-ejemplo">Este es un DIV básico</div>
+                <p>Como puedes ver, el DIV ocupa toda la anchura disponible y se comporta como un bloque.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔍 Diferencia entre elementos de bloque y en línea</h2>
+            
+            <div class="demo">
+                <h4>Elemento de bloque (DIV):</h4>
+                <div class="div-bloque">DIV 1</div>
+                <div class="div-bloque">DIV 2</div>
+                <div class="div-bloque">DIV 3</div>
+                <p>Los DIVs se apilan verticalmente, cada uno en su propia línea.</p>
+                
+                <h4>Elemento en línea (SPAN):</h4>
+                <span class="span-linea">SPAN 1</span>
+                <span class="span-linea">SPAN 2</span>
+                <span class="span-linea">SPAN 3</span>
+                <p>Los SPAN se colocan uno al lado del otro en la misma línea.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💻 Sintaxis básica del DIV</h2>
+            <div class="code">
+&lt;div&gt;
+    Contenido del div
+&lt;/div&gt;
+
+&lt;!-- DIV con atributos --&gt;
+&lt;div id="mi-div" class="contenedor"&gt;
+    Contenido con identificación
+&lt;/div&gt;
+
+&lt;!-- DIV anidado --&gt;
+&lt;div class="exterior"&gt;
+    &lt;div class="interior"&gt;
+        Contenido anidado
+    &lt;/div&gt;
+&lt;/div&gt;
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 1: Crear tu primer DIV</h3>
+            <p><strong>Objetivo:</strong> Crear un DIV simple con contenido de texto.</p>
+            <p><strong>Instrucciones:</strong> En el área de abajo, escribe el código HTML para crear un DIV que contenga el texto "¡Mi primer DIV!"</p>
+            
+            <div class="ejercicio-area" id="ejercicio1">
+                <!-- El estudiante debe escribir aquí el código mentalmente -->
+                <p><em>Área para practicar (imagina que escribes aquí tu código)</em></p>
+                <p><strong>Respuesta esperada:</strong></p>
+                <div class="code">
+&lt;div&gt;¡Mi primer DIV!&lt;/div&gt;
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 2: DIVs anidados</h3>
+            <p><strong>Objetivo:</strong> Comprender cómo se anidan los DIVs.</p>
+            <p><strong>Instrucciones:</strong> Crear un DIV "padre" que contenga dos DIVs "hijos" con textos diferentes.</p>
+            
+            <div class="ejercicio-area" id="ejercicio2">
+                <p><strong>Ejemplo de resultado:</strong></p>
+                <div style="border: 2px solid #667eea; padding: 15px; background: #f0f4ff;">
+                    <p>DIV Padre</p>
+                    <div style="background: #ffeaa7; padding: 10px; margin: 5px;">DIV Hijo 1</div>
+                    <div style="background: #fab1a0; padding: 10px; margin: 5px;">DIV Hijo 2</div>
+                </div>
+                
+                <p><strong>Código esperado:</strong></p>
+                <div class="code">
+&lt;div&gt;
+    DIV Padre
+    &lt;div&gt;DIV Hijo 1&lt;/div&gt;
+    &lt;div&gt;DIV Hijo 2&lt;/div&gt;
+&lt;/div&gt;
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 3: Identificar la diferencia</h3>
+            <p><strong>Objetivo:</strong> Observar la diferencia entre elementos de bloque y en línea.</p>
+            <p><strong>Pregunta:</strong> ¿Por qué los DIVs se apilan verticalmente mientras que los SPANs se colocan horizontalmente?</p>
+            
+            <div class="ejercicio-area">
+                <p><strong>Respuesta:</strong></p>
+                <p>Los DIVs son <strong>elementos de bloque</strong>, lo que significa que:</p>
+                <ul>
+                    <li>Ocupan toda la anchura disponible de su contenedor</li>
+                    <li>Siempre empiezan en una nueva línea</li>
+                    <li>Crean un salto de línea después de ellos</li>
+                </ul>
+                <p>Los SPANs son <strong>elementos en línea</strong>, lo que significa que:</p>
+                <ul>
+                    <li>Solo ocupan el espacio necesario para su contenido</li>
+                    <li>Se colocan en la misma línea que otros elementos en línea</li>
+                    <li>No crean saltos de línea</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📝 Resumen del Módulo 1</h2>
+            <ul>
+                <li>El <strong>&lt;div&gt;</strong> es un contenedor genérico de HTML</li>
+                <li>Es un <strong>elemento de bloque</strong> que ocupa toda la anchura disponible</li>
+                <li>Se utiliza para <strong>agrupar y estructurar</strong> contenido</li>
+                <li>Puede <strong>contener cualquier otro elemento</strong> HTML</li>
+                <li>Es la base para crear <strong>layouts y diseños</strong> complejos</li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="btn" disabled>← Módulo Anterior</button>
+            <button class="btn" onclick="nextModule()">Módulo 2: Estructura básica del DIV →</button>
+        </div>
+    </div>
+
+    <script>
+        function nextModule() {
+            alert("¡Perfecto! Has completado el Módulo 1. En el siguiente módulo aprenderemos sobre la estructura básica del DIV y sus atributos fundamentales.");
+            window.location.href = "modulo2_div.html";
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2: Estructura básica del DIV</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 4px solid #74b9ff;
+            background: #f0f8ff;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .exercise {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .demo {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .warning {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+            position: relative;
+        }
+        
+        .code-highlight {
+            background: #ffeaa7;
+            color: #2d3436;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        /* Ejemplos visuales de estructura */
+        .estructura-visual {
+            border: 2px solid #74b9ff;
+            padding: 15px;
+            margin: 10px 0;
+            position: relative;
+        }
+        
+        .etiqueta-apertura {
+            position: absolute;
+            top: -12px;
+            left: 10px;
+            background: #74b9ff;
+            color: white;
+            padding: 2px 8px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        
+        .etiqueta-cierre {
+            position: absolute;
+            bottom: -12px;
+            right: 10px;
+            background: #0984e3;
+            color: white;
+            padding: 2px 8px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        
+        .anidamiento-nivel-1 {
+            background: #ddd6fe;
+            border: 2px solid #8b5cf6;
+            padding: 15px;
+            margin: 10px;
+        }
+        
+        .anidamiento-nivel-2 {
+            background: #fce7f3;
+            border: 2px solid #ec4899;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .anidamiento-nivel-3 {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 8px;
+            margin: 8px;
+        }
+        
+        .ejercicio-area {
+            border: 2px dashed #74b9ff;
+            padding: 20px;
+            margin: 15px 0;
+            min-height: 120px;
+            background: #f8fbff;
+        }
+        
+        .sintaxis-tabla {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .sintaxis-tabla th, .sintaxis-tabla td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .sintaxis-tabla th {
+            background: #74b9ff;
+            color: white;
+        }
+        
+        .sintaxis-tabla tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+        
+        .btn {
+            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .interactive-btn {
+            background: #e17055;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📐 Módulo 2: Estructura básica del DIV</h1>
+            <p>Dominando la anatomía del elemento DIV</p>
+        </div>
+
+        <div class="section">
+            <h2>🏗️ Anatomía de un DIV</h2>
+            <p>Todo elemento DIV tiene una <strong>estructura fundamental</strong> que debemos comprender perfectamente:</p>
+            
+            <div class="estructura-visual">
+                <div class="etiqueta-apertura">&lt;div&gt;</div>
+                <div class="etiqueta-cierre">&lt;/div&gt;</div>
+                <div style="text-align: center; padding: 20px; background: rgba(116, 185, 255, 0.1);">
+                    <strong>CONTENIDO DEL DIV</strong><br>
+                    <small>Aquí va el texto, elementos HTML, otros DIVs, etc.</small>
+                </div>
+            </div>
+
+            <table class="sintaxis-tabla">
+                <thead>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Descripción</th>
+                        <th>Obligatorio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;div&gt;</code></td>
+                        <td>Etiqueta de apertura</td>
+                        <td>✅ Sí</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;/div&gt;</code></td>
+                        <td>Etiqueta de cierre</td>
+                        <td>✅ Sí</td>
+                    </tr>
+                    <tr>
+                        <td>Contenido</td>
+                        <td>Lo que va entre las etiquetas</td>
+                        <td>❌ No (puede estar vacío)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>📝 Etiquetas de apertura y cierre</h2>
+            
+            <div class="demo">
+                <h4>✅ Correcto:</h4>
+                <div class="code">
+&lt;div&gt;Contenido aquí&lt;/div&gt;
+
+&lt;div&gt;
+    Contenido en múltiples líneas
+    puede incluir otros elementos
+&lt;/div&gt;</div>
+            </div>
+            
+            <div class="warning">
+                <h4>❌ Incorrecto:</h4>
+                <div class="code">
+&lt;div&gt;Falta la etiqueta de cierre
+
+&lt;/div&gt;Falta la etiqueta de apertura
+
+&lt;div&gt;Mal anidado&lt;/span&gt;</div>
+                <p><strong>Importante:</strong> Siempre debes cerrar los DIVs en el orden correcto. HTML es estricto con esto.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📦 Contenido dentro del DIV</h2>
+            <p>Un DIV puede contener <strong>cualquier tipo de contenido HTML</strong>:</p>
+            
+            <div class="demo">
+                <h4>1. Solo texto:</h4>
+                <div class="code">
+&lt;div&gt;Este es un texto simple&lt;/div&gt;</div>
+                
+                <h4>2. Texto con elementos HTML:</h4>
+                <div class="code">
+&lt;div&gt;
+    &lt;h2&gt;Título dentro del DIV&lt;/h2&gt;
+    &lt;p&gt;Un párrafo con &lt;strong&gt;texto en negrita&lt;/strong&gt;&lt;/p&gt;
+    &lt;a href="#"&gt;Un enlace&lt;/a&gt;
+&lt;/div&gt;</div>
+                
+                <h4>3. Otros DIVs (anidamiento):</h4>
+                <div class="code">
+&lt;div&gt;
+    &lt;div&gt;DIV hijo 1&lt;/div&gt;
+    &lt;div&gt;DIV hijo 2&lt;/div&gt;
+&lt;/div&gt;</div>
+                
+                <h4>4. DIV vacío:</h4>
+                <div class="code">
+&lt;div&gt;&lt;/div&gt;  &lt;!-- Útil para decoración o efectos CSS --&gt;</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🪆 Anidamiento de DIVs</h2>
+            <p>El <strong>anidamiento</strong> significa colocar DIVs dentro de otros DIVs. Es fundamental para crear estructuras complejas.</p>
+            
+            <div class="demo">
+                <h4>Visualización del anidamiento:</h4>
+                <div class="anidamiento-nivel-1">
+                    <strong>DIV Nivel 1 (Abuelo)</strong>
+                    <div class="anidamiento-nivel-2">
+                        <strong>DIV Nivel 2 (Padre)</strong>
+                        <div class="anidamiento-nivel-3">
+                            <strong>DIV Nivel 3 (Hijo)</strong>
+                        </div>
+                    </div>
+                    <div class="anidamiento-nivel-2">
+                        <strong>DIV Nivel 2 (Tío)</strong>
+                    </div>
+                </div>
+                
+                <h4>Código correspondiente:</h4>
+                <div class="code">
+&lt;div class="nivel-1"&gt;
+    DIV Nivel 1 (Abuelo)
+    &lt;div class="nivel-2"&gt;
+        DIV Nivel 2 (Padre)
+        &lt;div class="nivel-3"&gt;
+            DIV Nivel 3 (Hijo)
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="nivel-2"&gt;
+        DIV Nivel 2 (Tío)
+    &lt;/div&gt;
+&lt;/div&gt;</div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 1: Identificar la estructura</h3>
+            <p><strong>Objetivo:</strong> Reconocer las partes de un DIV correctamente estructurado.</p>
+            
+            <div class="code">
+&lt;div&gt;
+    &lt;h1&gt;Mi página web&lt;/h1&gt;
+    &lt;p&gt;Bienvenido a mi sitio&lt;/p&gt;
+&lt;/div&gt;</div>
+            
+            <div class="ejercicio-area">
+                <p><strong>Pregunta:</strong> Identifica en el código anterior:</p>
+                <ol>
+                    <li>La etiqueta de apertura</li>
+                    <li>La etiqueta de cierre</li>
+                    <li>El contenido del DIV</li>
+                </ol>
+                
+                <button class="interactive-btn" onclick="mostrarRespuesta1()">Ver Respuesta</button>
+                
+                <div id="respuesta1" class="hidden">
+                    <p><strong>Respuestas:</strong></p>
+                    <ol>
+                        <li><span class="code-highlight">&lt;div&gt;</span> ← Etiqueta de apertura</li>
+                        <li><span class="code-highlight">&lt;/div&gt;</span> ← Etiqueta de cierre</li>
+                        <li>El contenido incluye:
+                            <ul>
+                                <li><code>&lt;h1&gt;Mi página web&lt;/h1&gt;</code></li>
+                                <li><code>&lt;p&gt;Bienvenido a mi sitio&lt;/p&gt;</code></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 2: Crear estructura anidada</h3>
+            <p><strong>Objetivo:</strong> Practicar el anidamiento de DIVs.</p>
+            <p><strong>Instrucciones:</strong> Crea una estructura de DIVs que represente:</p>
+            <ul>
+                <li>Un DIV principal llamado "casa"</li>
+                <li>Dentro, dos DIVs: "planta-alta" y "planta-baja"</li>
+                <li>Dentro de "planta-alta": dos DIVs "dormitorio" y "baño"</li>
+                <li>Dentro de "planta-baja": "sala" y "cocina"</li>
+            </ul>
+            
+            <div class="ejercicio-area">
+                <button class="interactive-btn" onclick="mostrarRespuesta2()">Ver Solución</button>
+                
+                <div id="respuesta2" class="hidden">
+                    <div class="code">
+&lt;div class="casa"&gt;
+    Casa
+    &lt;div class="planta-alta"&gt;
+        Planta Alta
+        &lt;div class="dormitorio"&gt;Dormitorio&lt;/div&gt;
+        &lt;div class="baño"&gt;Baño&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="planta-baja"&gt;
+        Planta Baja
+        &lt;div class="sala"&gt;Sala&lt;/div&gt;
+        &lt;div class="cocina"&gt;Cocina&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 3: Encontrar el error</h3>
+            <p><strong>Objetivo:</strong> Identificar errores comunes en la estructura de DIVs.</p>
+            <p><strong>Instrucciones:</strong> ¿Qué está mal en este código?</p>
+            
+            <div class="code">
+&lt;div&gt;
+    &lt;div&gt;Primer DIV
+    &lt;div&gt;Segundo DIV&lt;/div&gt;
+    &lt;/div&gt;
+    Tercer DIV
+&lt;/div&gt;</div>
+            
+            <div class="ejercicio-area">
+                <button class="interactive-btn" onclick="mostrarRespuesta3()">Ver Diagnóstico</button>
+                
+                <div id="respuesta3" class="hidden">
+                    <p><strong>Error encontrado:</strong></p>
+                    <p>Al "Primer DIV" le falta la etiqueta de cierre <code>&lt;/div&gt;</code>.</p>
+                    
+                    <p><strong>Código corregido:</strong></p>
+                    <div class="code">
+&lt;div&gt;
+    &lt;div&gt;Primer DIV&lt;/div&gt;  &lt;!-- ← Agregamos el cierre --&gt;
+    &lt;div&gt;Segundo DIV&lt;/div&gt;
+    Tercer DIV
+&lt;/div&gt;</div>
+                    
+                    <p><strong>Regla importante:</strong> Cada etiqueta de apertura <code>&lt;div&gt;</code> DEBE tener su correspondiente etiqueta de cierre <code>&lt;/div&gt;</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 4: DIV vacío vs DIV con contenido</h3>
+            <p><strong>Objetivo:</strong> Entender cuándo usar DIVs vacíos.</p>
+            
+            <div class="ejercicio-area">
+                <p><strong>¿Cuáles de estos DIVs son válidos?</strong></p>
+                <div class="code">
+1. &lt;div&gt;&lt;/div&gt;
+2. &lt;div&gt;Hola mundo&lt;/div&gt;
+3. &lt;div&gt;
+   &lt;/div&gt;
+4. &lt;div&gt;&lt;p&gt;Párrafo&lt;/p&gt;&lt;/div&gt;</div>
+                
+                <button class="interactive-btn" onclick="mostrarRespuesta4()">Ver Respuesta</button>
+                
+                <div id="respuesta4" class="hidden">
+                    <p><strong>Todos son válidos:</strong></p>
+                    <ol>
+                        <li><code>&lt;div&gt;&lt;/div&gt;</code> - DIV vacío (útil para efectos CSS)</li>
+                        <li><code>&lt;div&gt;Hola mundo&lt;/div&gt;</code> - DIV con texto</li>
+                        <li><code>&lt;div&gt;   &lt;/div&gt;</code> - DIV con espacios (técnicamente vacío)</li>
+                        <li><code>&lt;div&gt;&lt;p&gt;Párrafo&lt;/p&gt;&lt;/div&gt;</code> - DIV con elemento HTML</li>
+                    </ol>
+                    <p><strong>Nota:</strong> Los DIVs vacíos son útiles para decoración, separadores, o elementos que serán llenados con JavaScript.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💡 Mejores prácticas</h2>
+            <ul>
+                <li><strong>Siempre cierra tus DIVs</strong> en el orden correcto</li>
+                <li><strong>Usa indentación</strong> para hacer el código más legible</li>
+                <li><strong>No anides demasiado profundo</strong> (máximo 5-6 niveles)</li>
+                <li><strong>Da nombres descriptivos</strong> a tus clases e IDs</li>
+                <li><strong>DIVs vacíos</strong> son válidos, pero úsalos con propósito</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📝 Resumen del Módulo 2</h2>
+            <ul>
+                <li>Todo DIV tiene <strong>etiqueta de apertura y cierre obligatorias</strong></li>
+                <li>El contenido puede ser <strong>texto, elementos HTML u otros DIVs</strong></li>
+                <li>El <strong>anidamiento</strong> permite crear estructuras jerárquicas</li>
+                <li>Los <strong>DIVs vacíos</strong> son válidos y útiles para decoración</li>
+                <li>La <strong>correcta estructura</strong> es fundamental para el CSS y JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="btn" onclick="prevModule()">← Módulo 1: Introducción</button>
+            <button class="btn" onclick="nextModule()">Módulo 3: Atributos fundamentales →</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarRespuesta1() {
+            document.getElementById('respuesta1').classList.toggle('hidden');
+        }
+        
+        function mostrarRespuesta2() {
+            document.getElementById('respuesta2').classList.toggle('hidden');
+        }
+        
+        function mostrarRespuesta3() {
+            document.getElementById('respuesta3').classList.toggle('hidden');
+        }
+        
+        function mostrarRespuesta4() {
+            document.getElementById('respuesta4').classList.toggle('hidden');
+        }
+        
+        function prevModule() {
+            alert("Regresando al Módulo 1: Introducción al elemento DIV");
+            window.location.href = "modulo1_div.html";
+        }
+        
+        function nextModule() {
+            alert("¡Excelente progreso! En el Módulo 3 aprenderemos sobre los atributos fundamentales: id, class, style y más.");
+            window.location.href = "modulo3_div.html";
+        }
+    </script>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3: Atributos fundamentales</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 4px solid #a29bfe;
+            background: #f9f7ff;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .exercise {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .demo {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .warning {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .info {
+            background: #d1ecf1;
+            border: 1px solid #b7d4dd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #17a2b8;
+        }
+        
+        .code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        
+        /* Ejemplos prácticos de atributos */
+        .ejemplo-id {
+            background: #ff7675;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border: 3px solid #d63031;
+        }
+        
+        .ejemplo-class-1 {
+            background: #74b9ff;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        
+        .ejemplo-class-2 {
+            background: #74b9ff;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        
+        .caja-roja {
+            background: #e74c3c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .caja-azul {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .multiples-clases {
+            background: linear-gradient(45deg, #fd79a8, #fdcb6e);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .atributos-tabla {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .atributos-tabla th, .atributos-tabla td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .atributos-tabla th {
+            background: #a29bfe;
+            color: white;
+        }
+        
+        .atributos-tabla tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .ejercicio-area {
+            border: 2px dashed #a29bfe;
+            padding: 20px;
+            margin: 15px 0;
+            min-height: 120px;
+            background: #fbfaff;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+        
+        .btn {
+            background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .interactive-btn {
+            background: #e17055;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .test-btn {
+            background: #00b894;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        /* Ejemplos interactivos */
+        .ejemplo-interactivo {
+            border: 2px solid #a29bfe;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            background: #f0f0ff;
+        }
+        
+        .highlight {
+            background: yellow !important;
+            color: black !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏷️ Módulo 3: Atributos fundamentales</h1>
+            <p>Identificación, clasificación y personalización de DIVs</p>
+        </div>
+
+        <div class="section">
+            <h2>📋 Introducción a los atributos</h2>
+            <p>Los <strong>atributos</strong> son propiedades que añadimos a los elementos HTML para darles características especiales. En los DIVs, los atributos más importantes son:</p>
+            
+            <table class="atributos-tabla">
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Propósito</th>
+                        <th>Únicos/Múltiples</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>id</code></td>
+                        <td>Identificación única</td>
+                        <td>Único en la página</td>
+                        <td><code>id="header"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>class</code></td>
+                        <td>Agrupación y estilos</td>
+                        <td>Múltiples elementos</td>
+                        <td><code>class="caja"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>style</code></td>
+                        <td>Estilos en línea</td>
+                        <td>Individual</td>
+                        <td><code>style="color: red"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>title</code></td>
+                        <td>Información adicional</td>
+                        <td>Individual</td>
+                        <td><code>title="Tooltip"</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>🆔 Atributo ID: Identificación única</h2>
+            <p>El atributo <code>id</code> asigna un <strong>identificador único</strong> a un elemento. Es como el DNI del elemento - solo puede haber uno igual en toda la página.</p>
+            
+            <div class="demo">
+                <h4>Sintaxis y ejemplo:</h4>
+                <div class="code">
+&lt;div id="mi-identificador"&gt;Contenido único&lt;/div&gt;
+&lt;div id="header"&gt;Cabecera del sitio&lt;/div&gt;
+&lt;div id="menu-principal"&gt;Menú de navegación&lt;/div&gt;</div>
+                
+                <div class="ejemplo-id" id="ejemplo-id-unico">
+                    Este DIV tiene id="ejemplo-id-unico"
+                </div>
+            </div>
+            
+            <div class="info">
+                <h4>📌 Reglas del ID:</h4>
+                <ul>
+                    <li><strong>Único:</strong> Solo un elemento por página puede tener el mismo ID</li>
+                    <li><strong>Sin espacios:</strong> Usa guiones o guiones bajos en lugar de espacios</li>
+                    <li><strong>Empieza con letra:</strong> No uses números al inicio</li>
+                    <li><strong>Case-sensitive:</strong> "MiID" es diferente de "miid"</li>
+                </ul>
+            </div>
+            
+            <div class="warning">
+                <h4>❌ Errores comunes con ID:</h4>
+                <div class="code">
+&lt;!-- MAL: IDs duplicados --&gt;
+&lt;div id="caja"&gt;Primera caja&lt;/div&gt;
+&lt;div id="caja"&gt;Segunda caja&lt;/div&gt;  &lt;!-- ERROR --&gt;
+
+&lt;!-- MAL: ID con espacios --&gt;
+&lt;div id="mi caja"&gt;Contenido&lt;/div&gt;  &lt;!-- ERROR --&gt;
+
+&lt;!-- BIEN: IDs únicos y válidos --&gt;
+&lt;div id="caja-1"&gt;Primera caja&lt;/div&gt;
+&lt;div id="caja-2"&gt;Segunda caja&lt;/div&gt;</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>👥 Atributo CLASS: Agrupación y clasificación</h2>
+            <p>El atributo <code>class</code> permite <strong>agrupar elementos</strong> que comparten características similares. Varios elementos pueden tener la misma clase.</p>
+            
+            <div class="demo">
+                <h4>Ejemplos de clases:</h4>
+                <div class="code">
+&lt;div class="caja"&gt;Primera caja&lt;/div&gt;
+&lt;div class="caja"&gt;Segunda caja&lt;/div&gt;
+&lt;div class="caja destacada"&gt;Caja con múltiples clases&lt;/div&gt;</div>
+                
+                <div class="ejemplo-class-1">DIV con class="ejemplo-class-1"</div>
+                <div class="ejemplo-class-2">DIV con class="ejemplo-class-2"</div>
+                <div class="ejemplo-class-1">Otro DIV con class="ejemplo-class-1"</div>
+            </div>
+            
+            <div class="info">
+                <h4>📌 Características de CLASS:</h4>
+                <ul>
+                    <li><strong>Reutilizable:</strong> Muchos elementos pueden tener la misma clase</li>
+                    <li><strong>Múltiples clases:</strong> Un elemento puede tener varias clases separadas por espacios</li>
+                    <li><strong>Para CSS:</strong> Se usa principalmente para aplicar estilos</li>
+                    <li><strong>Para JavaScript:</strong> También útil para seleccionar grupos de elementos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎨 Atributo STYLE: Estilos en línea</h2>
+            <p>El atributo <code>style</code> permite aplicar <strong>estilos CSS directamente</strong> al elemento, sin necesidad de archivos CSS externos.</p>
+            
+            <div class="demo">
+                <h4>Ejemplos de estilos en línea:</h4>
+                <div class="code">
+&lt;div style="background-color: red; color: white; padding: 10px;"&gt;
+    DIV con estilos en línea
+&lt;/div&gt;
+
+&lt;div style="font-size: 20px; text-align: center; border: 2px solid blue;"&gt;
+    Texto grande centrado con borde
+&lt;/div&gt;</div>
+                
+                <div style="background-color: #e74c3c; color: white; padding: 15px; text-align: center; border-radius: 5px; margin: 10px 0;">
+                    Este DIV usa estilos en línea
+                </div>
+                
+                <div style="background: linear-gradient(45deg, #3498db, #9b59b6); color: white; padding: 20px; text-align: center; font-weight: bold; border-radius: 10px; margin: 10px 0;">
+                    DIV con gradiente y múltiples estilos
+                </div>
+            </div>
+            
+            <div class="warning">
+                <h4>⚠️ Cuándo usar style:</h4>
+                <ul>
+                    <li><strong>✅ Para pruebas rápidas</strong> y prototipos</li>
+                    <li><strong>✅ Estilos únicos</strong> que no se repetirán</li>
+                    <li><strong>❌ NO para estilos que se repiten</strong> - mejor usar CSS externo</li>
+                    <li><strong>❌ NO para proyectos grandes</strong> - dificulta el mantenimiento</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 1: Crear DIVs con ID único</h3>
+            <p><strong>Objetivo:</strong> Practicar el uso correcto del atributo ID.</p>
+            <p><strong>Instrucciones:</strong> Crea 3 DIVs que representen las secciones de una página web:</p>
+            <ul>
+                <li>Un DIV para la cabecera (header)</li>
+                <li>Un DIV para el contenido principal (main-content)</li>
+                <li>Un DIV para el pie de página (footer)</li>
+            </ul>
+            
+            <div class="ejercicio-area">
+                <button class="interactive-btn" onclick="mostrarRespuesta1()">Ver Solución</button>
+                
+                <div id="respuesta1" class="hidden">
+                    <div class="code">
+&lt;div id="header"&gt;
+    Cabecera de la página
+&lt;/div&gt;
+
+&lt;div id="main-content"&gt;
+    Contenido principal de la página
+&lt;/div&gt;
+
+&lt;div id="footer"&gt;
+    Pie de página
+&lt;/div&gt;</div>
+                    <p><strong>✅ Puntos clave:</strong></p>
+                    <ul>
+                        <li>Cada ID es único y descriptivo</li>
+                        <li>Se usan guiones para separar palabras</li>
+                        <li>Los nombres son semánticamente correctos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 2: Usar clases para agrupar elementos</h3>
+            <p><strong>Objetivo:</strong> Entender cómo las clases agrupan elementos similares.</p>
+            <p><strong>Instrucciones:</strong> Crea 4 DIVs que representen productos en una tienda:</p>
+            <ul>
+                <li>Todos deben tener la clase "producto"</li>
+                <li>Dos productos deben tener también la clase "oferta"</li>
+                <li>Un producto debe tener la clase "destacado"</li>
+            </ul>
+            
+            <div class="ejercicio-area">
+                <button class="interactive-btn" onclick="mostrarRespuesta2()">Ver Solución</button>
+                
+                <div id="respuesta2" class="hidden">
+                    <div class="code">
+&lt;div class="producto"&gt;
+    Producto normal 1
+&lt;/div&gt;
+
+&lt;div class="producto oferta"&gt;
+    Producto en oferta 1
+&lt;/div&gt;
+
+&lt;div class="producto oferta"&gt;
+    Producto en oferta 2
+&lt;/div&gt;
+
+&lt;div class="producto destacado"&gt;
+    Producto destacado
+&lt;/div&gt;</div>
+                    
+                    <div class="ejemplo-interactivo">
+                        <div class="caja-azul">Producto normal 1</div>
+                        <div class="caja-roja">Producto en oferta 1</div>
+                        <div class="caja-roja">Producto en oferta 2</div>
+                        <div class="multiples-clases">Producto destacado</div>
+                    </div>
+                    
+                    <p><strong>✅ Observa cómo:</strong></p>
+                    <ul>
+                        <li>Todos comparten la clase "producto"</li>
+                        <li>Los elementos pueden tener múltiples clases</li>
+                        <li>Las clases se separan con espacios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 3: Experimentar con estilos en línea</h3>
+            <p><strong>Objetivo:</strong> Practicar el uso del atributo style.</p>
+            <p><strong>Instrucciones:</strong> Crea un DIV con los siguientes estilos en línea:</p>
+            <ul>
+                <li>Fondo de color verde</li>
+                <li>Texto en color blanco</li>
+                <li>Padding de 20px</li>
+                <li>Texto centrado</li>
+                <li>Bordes redondeados</li>
+            </ul>
+            
+            <div class="ejercicio-area">
+                <button class="interactive-btn" onclick="mostrarRespuesta3()">Ver Solución</button>
+                
+                <div id="respuesta3" class="hidden">
+                    <div class="code">
+&lt;div style="background-color: green; color: white; padding: 20px; text-align: center; border-radius: 10px;"&gt;
+    Mi DIV con estilos personalizados
+&lt;/div&gt;</div>
+                    
+                    <div style="background-color: green; color: white; padding: 20px; text-align: center; border-radius: 10px; margin: 15px 0;">
+                        Mi DIV con estilos personalizados
+                    </div>
+                    
+                    <p><strong>✅ Propiedades utilizadas:</strong></p>
+                    <ul>
+                        <li><code>background-color: green</code> - Color de fondo</li>
+                        <li><code>color: white</code> - Color del texto</li>
+                        <li><code>padding: 20px</code> - Espacio interno</li>
+                        <li><code>text-align: center</code> - Texto centrado</li>
+                        <li><code>border-radius: 10px</code> - Bordes redondeados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 4: Combinar todos los atributos</h3>
+            <p><strong>Objetivo:</strong> Usar ID, class y style juntos correctamente.</p>
+            <p><strong>Instrucciones:</strong> Crea un DIV que tenga:</p>
+            <ul>
+                <li>ID único: "tarjeta-especial"</li>
+                <li>Clases: "tarjeta" y "premium"</li>
+                <li>Estilos en línea: fondo dorado y texto centrado</li>
+                <li>Atributo title con información adicional</li>
+            </ul>
+            
+            <div class="ejercicio-area">
+                <button class="interactive-btn" onclick="mostrarRespuesta4()">Ver Solución</button>
+                
+                <div id="respuesta4" class="hidden">
+                    <div class="code">
+&lt;div id="tarjeta-especial" 
+     class="tarjeta premium" 
+     style="background-color: gold; text-align: center; padding: 15px; border-radius: 8px;" 
+     title="Esta es una tarjeta premium especial"&gt;
+    Tarjeta Premium Especial
+&lt;/div&gt;</div>
+                    
+                    <div id="tarjeta-especial-demo" 
+                         style="background-color: gold; text-align: center; padding: 15px; border-radius: 8px; margin: 15px 0; cursor: pointer;" 
+                         title="Esta es una tarjeta premium especial"
+                         onmouseover="this.style.background='#ffeb3b'"
+                         onmouseout="this.style.background='gold'">
+                        Tarjeta Premium Especial (pasa el mouse por encima)
+                    </div>
+                    
+                    <p><strong>✅ Elementos utilizados:</strong></p>
+                    <ul>
+                        <li><strong>ID:</strong> Identificación única del elemento</li>
+                        <li><strong>Class:</strong> Agrupación con otros elementos similares</li>
+                        <li><strong>Style:</strong> Apariencia visual personalizada</li>
+                        <li><strong>Title:</strong> Información adicional (tooltip)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h3>🏋️ Ejercicio 5: Encontrar errores en atributos</h3>
+            <p><strong>Objetivo:</strong> Identificar y corregir errores comunes.</p>
+            <p><strong>Instrucciones:</strong> ¿Qué errores encuentras en este código?</p>
+            
+            <div class="code">
+&lt;div id="mi caja"&gt;Caja 1&lt;/div&gt;
+&lt;div id="mi-caja"&gt;Caja 2&lt;/div&gt;
+&lt;div class="producto oferta"destacado"&gt;Producto&lt;/div&gt;
+&lt;div style="color: red; background: blue;"&gt;Texto&lt;/div&gt;</div>
+            
+            <div class="ejercicio-area">
+                <button class="interactive-btn" onclick="mostrarRespuesta5()">Ver Análisis de Errores</button>
+                
+                <div id="respuesta5" class="hidden">
+                    <p><strong>❌ Errores encontrados:</strong></p>
+                    <ol>
+                        <li><strong>ID con espacios:</strong> <code>id="mi caja"</code> debería ser <code>id="mi-caja"</code></li>
+                        <li><strong>IDs duplicados:</strong> "mi-caja" se repite (después de corregir el primero)</li>
+                        <li><strong>Class mal formateada:</strong> <code>class="producto oferta"destacado"</code> - faltan espacios</li>
+                        <li><strong>Style válido:</strong> El último DIV está correcto</li>
+                    </ol>
+                    
+                    <p><strong>✅ Código corregido:</strong></p>
+                    <div class="code">
+&lt;div id="mi-caja-1"&gt;Caja 1&lt;/div&gt;
+&lt;div id="mi-caja-2"&gt;Caja 2&lt;/div&gt;
+&lt;div class="producto oferta destacado"&gt;Producto&lt;/div&gt;
+&lt;div style="color: red; background: blue;"&gt;Texto&lt;/div&gt;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🌟 Otros atributos globales importantes</h2>
+            <div class="demo">
+                <h4>Atributos adicionales útiles:</h4>
+                <div class="code">
+&lt;!-- Atributo title: información adicional --&gt;
+&lt;div title="Información que aparece al pasar el mouse"&gt;
+    Pasa el mouse aquí
+&lt;/div&gt;
+
+&lt;!-- Atributo data-*: datos personalizados --&gt;
+&lt;div data-producto-id="123" data-precio="29.99"&gt;
+    Producto con datos personalizados
+&lt;/div&gt;
+
+&lt;!-- Atributo hidden: ocultar elemento --&gt;
+&lt;div hidden&gt;Este DIV está oculto&lt;/div&gt;
+
+&lt;!-- Atributo lang: idioma del contenido --&gt;
+&lt;div lang="en"&gt;Content in English&lt;/div&gt;</div>
+                
+                <div class="info">
+                    <p><strong>💡 Uso práctico:</strong></p>
+                    <ul>
+                        <li><code>title</code> - Tooltips informativos</li>
+                        <li><code>data-*</code> - Almacenar datos para JavaScript</li>
+                        <li><code>hidden</code> - Ocultar elementos temporalmente</li>
+                        <li><code>lang</code> - Especificar idioma para accesibilidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📝 Resumen del Módulo 3</h2>
+            <ul>
+                <li><strong>ID:</strong> Identificador único, una sola vez por página</li>
+                <li><strong>Class:</strong> Agrupación de elementos, reutilizable múltiples veces</li>
+                <li><strong>Style:</strong> Estilos CSS en línea, para personalización individual</li>
+                <li><strong>Title:</strong> Información adicional que aparece en tooltips</li>
+                <li><strong>Combinación:</strong> Todos los atributos se pueden usar juntos</li>
+                <li><strong>Mejores prácticas:</strong> IDs únicos, clases descriptivas, estilos externos para proyectos grandes</li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="btn" onclick="prevModule()">← Módulo 2: Estructura básica</button>
+            <button class="btn" onclick="nextModule()">Módulo 4: Primeros pasos con CSS →</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarRespuesta1() {
+            document.getElementById('respuesta1').classList.toggle('hidden');
+        }
+        
+        function mostrarRespuesta2() {
+            document.getElementById('respuesta2').classList.toggle('hidden');
+        }
+        
+        function mostrarRespuesta3() {
+            document.getElementById('respuesta3').classList.toggle('hidden');
+        }
+        
+        function mostrarRespuesta4() {
+            document.getElementById('respuesta4').classList.toggle('hidden');
+        }
+        
+        function mostrarRespuesta5() {
+            document.getElementById('respuesta5').classList.toggle('hidden');
+        }
+        
+        function prevModule() {
+            alert("Regresando al Módulo 2: Estructura básica del DIV");
+            window.location.href = "modulo2_div.html";
+        }
+        
+        function nextModule() {
+            alert("¡Excelente! En el Módulo 4 daremos nuestros primeros pasos con CSS para estilizar nuestros DIVs.");
+            window.location.href = "modulo4_div.html";
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

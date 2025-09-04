@@ -1,0 +1,27 @@
+div {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 220, 0.575);
+}
+body{
+    background-color: rgb(216, 209, 209);
+}
+section  {
+    background-color: rgba(72, 24, 78, 0.575);
+}body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f4f4f4;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #000000;
+    background-image: linear-gradient(to right, #ccc, #7a0404, #ccc);
+
+}.
