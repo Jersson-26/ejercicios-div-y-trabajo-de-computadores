@@ -1,0 +1,12 @@
+div {
+    color: rgb(16, 19, 190);
+    background-color: rgba(0, 255, 13, 0.534);
+}
+#div02 {
+    color: brown;
+    background-color: rgb(199, 230, 62);
+}
+.div03 {
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        div {
+    color: rgb(16, 19, 190);
+    background-color: rgba(0, 255, 13, 0.534);
+}
+#div02 {
+    color: brown;
+    background-color: rgb(199, 230, 62);
+}
+.div03 {
+    color: rgb(211, 12, 12);
+    background-color: rgb(17, 125, 175);
+    width: 80%;
+    right: 90px;
+    text-align: center;
+}
+.div05 {
+    width: 60%;
+    padding: 12px;
+    text-align: center;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 4px 20px rgb(155, 62, 39);
+    color: rgb(0, 0, 0);
+    background-color: rgb(242, 251, 255);
+}
+div:hover {
+    transition: scale(1.1);
+}
+.div06 {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+}
+.divpadre{
+    background-color: rgb(74, 71, 255);
+    padding: 12px;
+}
+.divhijo01{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: blue;
+    border: 2px solid rgb(228, 27, 27);
+}
+.divhijo02{
+    background-color: rgb(67, 201, 235);
+    padding: 10px;
+    color: blue;
+    border: 2px solid rgb(228, 27, 27);
+}
+.divhijo03{
+    background-color: rgba(243, 168, 243, 0.397);
+    padding: 10px;
+    color: blue;
+    border: 2px solid rgb(228, 27, 27);
+}
+
+
+
+.divpadre1{
+    background-color: rgb(130, 128, 235);
+    padding: 12px;
+    display: flex;
+    gap: 60px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 30px;
+}
+.divhijo04{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: blue;
+    border: 2px solid rgb(228, 27, 27);
+}
+.divhijo05{
+    background-color: rgb(67, 201, 235);
+    padding: 10px;
+    color: blue;
+    border: 2px solid rgb(228, 27, 27);
+}
+.divhijo06{
+    background-color: rgba(243, 168, 243, 0.397);
+    padding: 10px;
+    color: blue;
+    border: 2px solid rgb(228, 27, 27);
+}
+
+
+.abuelo{
+    background-color: rgba(19, 106, 206, 0.514);
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(2, 82, 255);
+}
+.padre {
+    background-color: rgb(255, 136, 136);
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(225, 2, 255);
+}
+.hijo {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.658);
+}
+.tio{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 2, 213);
+}
+    </style>
+</head>
+<body>
+    <h1>DIV</h1>
+    <div id="div02">Clase DIV</div>
+    <br>
+    <div class="div03">Clase DIV2</div>
+    <br>
+    <div  style="color: rgb(46, 18, 199);" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsam doloribus, animi dolore ab libero omnis accusamus eaque fugit reiciendis quia aliquid magni numquam voluptatibus excepturi totam. Nam, sed? Doloribus. Clase DIV3</div>
+    <br>
+    <div class="div03">ACTIVIDAD DIV</div>
+    <br>
+    <div class="div05">ACTIVIDAD 05</div>
+    <br>
+    <div class="div06">ACTIVIDAD 05</div>
+    <br>
+    <div class="divpadre">
+        <div class="divhijo01">DIV 01</div>
+        <div class="divhijo02">DIV 02</div>
+        <div class="divhijo03">DIV 03</div>
+    </div>
+    <br>
+    <div class="divpadre1">
+        <div class="divhijo04">DIV 01</div>
+        <div class="divhijo05">DIV 02</div>
+        <div class="divhijo06">DIV 03</div>
+    </div>
+    <br>
+    <div class="abuelo"><h2>abuelo</h2>
+        <div class="padre"><h2>padre</h2>
+            <div class="hijo"><h2>hijo</h2></div>
+        </div>
+        <div class="tio"><h2>tio</h2></div>
+    </div>
+    
+</body>
+</html>
